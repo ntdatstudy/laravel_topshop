@@ -1,0 +1,80 @@
+@mixin flexBox($align: unset, $jusitfy: unset, $wrap: unset, $direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jusitfy;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background: #fff;
+  font-weight: 300;
+  color: #232323;
+}
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+[class^="topshop-icon__"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.topshop-icon__ {
+  &search {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/search-icon.svg');
+  }
+
+  &account {
+    width: 16px;
+    height: 18px;
+    background-image: url('../img/account-icon.svg');
+  }
+
+  &wishlist {
+    width: 19px;
+    height: 18px;
+    background-image: url('../img/wishlist-header.svg');
+  }
+
+  &cart {
+    width: 17px;
+    height: 18px;
+    background-image: url('../img/shopping-cart-icon.svg');
+  }
+}
+
+[class^="flag-icon__"] {
+  display: inline-block;
+  width: 35px;
+  height: 19px;
+
+  background-image: url('../img/flag_sprite.png');
+  background-repeat: no-repeat;
+  background-size: 65px auto;
+  vertical-align: middle;
+}
+
+.flag-icon__ {
+  &uk {
+    background-position: 0 95.134%;
+  }
+}
+
+@import 'header';

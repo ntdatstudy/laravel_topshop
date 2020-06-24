@@ -1,0 +1,41 @@
+.banner-sale-off {
+  background-image: url(/images/json-0000156327_TS-WK43-WED-HERO-BG-MOB-UKjpg.jpg?f03e69aed4d8c2ca563dae94bfaff2d8);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner-sale-off .img-sale-off {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.banner-sale-off .type {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  flex-wrap: nowrap;
+  color: #ff2900;
+  width: 100%;
+  background: #fff;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.banner-sale-off b {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 2px #708090;
+  padding: 40px 0;
+}
+
