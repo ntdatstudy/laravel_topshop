@@ -49514,36 +49514,34 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 
 var app = new Vue({
   el: '#app'
-});
-$(window).on('scroll', function () {
-  var headerNavbar = $('#header .header__nav .nav');
-  var win = $(window);
-  var winTop = win.scrollTop();
-  var winWidth = win.width();
-  if (winWidth < 768) return;
-
-  if (winTop > 135) {
-    headerNavbar.addClass('fixed-top');
-  } else {
-    headerNavbar.removeClass('fixed-top');
-  }
-}).on('resize', function () {
-  if ($(this).width() > 768) {
-    $('.header__nav .nav').removeClass('active');
-    $('body').removeClass('overflow-hidden');
-  }
-});
-$('.nav-list li a').on('click', function () {
-  $(this).toggleClass('active').next().toggleClass('active');
-});
-$('#btn-open-menu').on('click', function () {
-  $('.header__nav .nav').addClass('active');
-  $('body').addClass('overflow-hidden');
-});
-$('#btn-close-menu').on('click', function () {
-  $('.header__nav .nav').removeClass('active');
-  $('body').removeClass('overflow-hidden');
-});
+}); // $(window).on('scroll', function() {
+//     let headerNavbar = $('#header .header__nav .nav');
+//     let win = $(window);
+//     let winTop = win.scrollTop();
+//     let winWidth = win.width();
+//     if (winWidth < 768) return;
+//     if (winTop > 135) {
+//         headerNavbar.addClass('fixed-top');
+//     } else {
+//         headerNavbar.removeClass('fixed-top');
+//     }
+// }).on('resize', function() {
+//     if ($(this).width() > 768) {
+//         $('.header__nav .nav').removeClass('active');
+//         $('body').removeClass('overflow-hidden');
+//     }
+// });
+// $('.nav-list li a').on('click', function() {
+//     $(this).toggleClass('active').next().toggleClass('active');
+// });
+// $('#btn-open-menu').on('click', function() {
+//     $('.header__nav .nav').addClass('active');
+//     $('body').addClass('overflow-hidden');
+// });
+// $('#btn-close-menu').on('click', function() {
+//     $('.header__nav .nav').removeClass('active');
+//     $('body').removeClass('overflow-hidden');
+// });
 
 /***/ }),
 
@@ -49674,6 +49672,39 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/admin/header.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/admin/header.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/admin/main.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/admin/main.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/admin/sidebar.scss":
+/*!*******************************************!*\
+  !*** ./resources/sass/admin/sidebar.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -49697,15 +49728,18 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/index.scss ***!
-  \*****************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/index.scss ./resources/sass/admin/header.scss ./resources/sass/admin/sidebar.scss ./resources/sass/admin/main.scss ***!
+  \*************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\Studying\Laravel_VueJS\topshop\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! D:\Studying\Laravel_VueJS\topshop\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! D:\Studying\Laravel_VueJS\topshop\resources\sass\index.scss */"./resources/sass/index.scss");
+__webpack_require__(/*! D:\Studying\Laravel_VueJS\topshop\resources\sass\index.scss */"./resources/sass/index.scss");
+__webpack_require__(/*! D:\Studying\Laravel_VueJS\topshop\resources\sass\admin\header.scss */"./resources/sass/admin/header.scss");
+__webpack_require__(/*! D:\Studying\Laravel_VueJS\topshop\resources\sass\admin\sidebar.scss */"./resources/sass/admin/sidebar.scss");
+module.exports = __webpack_require__(/*! D:\Studying\Laravel_VueJS\topshop\resources\sass\admin\main.scss */"./resources/sass/admin/main.scss");
 
 
 /***/ })

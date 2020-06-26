@@ -1,0 +1,39 @@
+#header .header__topnav {
+  position: fixed;
+  height: 45px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+#header .header__topnav #btn-open-menu,
+#header .header__topnav #btn-close-menu {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#header .header__topnav #btn-open-menu img,
+#header .header__topnav #btn-close-menu img {
+  width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #header .header__topnav #btn-open-menu,
+  #header .header__topnav #btn-close-menu {
+    display: none;
+  }
+}
+
+#header .header__topnav #btn-close-menu {
+  display: none;
+}
+
+#header .header__topnav .logout img {
+  width: 30px;
+}
+

@@ -10980,6 +10980,14 @@ body {
   background-position: 0 95.134%;
 }
 
+.preload {
+  transition: none !important;
+}
+
+.preload * {
+  transition: none !important;
+}
+
 #header .header__banner {
   background: #ff2900;
 }
@@ -11031,7 +11039,7 @@ body {
   border-bottom: 1px solid #cdcdcd;
 }
 
-#header .header__nav .content .container-content {
+#header .header__nav .content .content__container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -11040,22 +11048,22 @@ body {
   height: 38px;
 }
 
-#header .header__nav .content .container-content button {
+#header .header__nav .content .content__container button {
   background: none;
   border: none;
   outline: none;
 }
 
-#header .header__nav .content .container-content a {
+#header .header__nav .content .content__container a {
   display: inline-block;
 }
 
-#header .header__nav .content .container-content > a,
-#header .header__nav .content .container-content > button {
+#header .header__nav .content .content__container > a,
+#header .header__nav .content .content__container > button {
   margin-left: 15px;
 }
 
-#header .header__nav .content .container-content form input {
+#header .header__nav .content .content__container form input {
   text-align: right;
   color: #707070;
   font-size: 12px;
@@ -11066,21 +11074,89 @@ body {
   outline: none;
 }
 
-#header .header__nav .content .container-content .btn-menu {
+#header .header__nav .content .content__container .btn-menu {
   display: none;
   margin: 0;
 }
 
-#header .header__nav .content .container-content .btn-menu img {
+#header .header__nav .content .content__container .btn-menu img {
   width: 26px;
 }
 
+#header .header__nav .content .content__container .link-account.logged-in {
+  position: relative;
+}
+
+#header .header__nav .content .content__container .link-account.logged-in:hover .link-account__dropdown {
+  display: block;
+}
+
+#header .header__nav .content .content__container .link-account.logged-in .link-account__dropdown {
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: 50%;
+  width: 290px;
+  padding: 25px 40px;
+  transform: translateX(50%);
+  background: #fff;
+  border: 1px solid #cdcdcd;
+  border-top: none;
+}
+
+#header .header__nav .content .content__container .link-account.logged-in .link-account__dropdown::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: -2px;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+  background: #fff;
+  border-top: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+}
+
+#header .header__nav .content .content__container .link-account.logged-in .link-account__dropdown * {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#header .header__nav .content .content__container .link-account.logged-in .link-account__dropdown a {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #232323;
+}
+
+#header .header__nav .content .content__container .link-account.logged-in .link-account__dropdown a:hover {
+  background-color: #666666;
+}
+
+#header .header__nav .content .content__container .link-account.logged-in .link-account__dropdown a:nth-child(3) {
+  color: #232323;
+  background-color: #fff;
+  border-color: #232323;
+}
+
+#header .header__nav .content .content__container .link-account.logged-in .link-account__dropdown a:nth-child(3):hover {
+  background-color: #232323;
+  color: #fff;
+}
+
 @media screen and (max-width: 768px) {
-  #header .header__nav .content .container-content .btn-menu {
+  #header .header__nav .content .content__container .btn-menu {
     display: block;
   }
 
-  #header .header__nav .content .container-content form {
+  #header .header__nav .content .content__container form {
     flex-grow: 1;
     display: flex;
     flex-direction: row-reverse;
@@ -11089,7 +11165,7 @@ body {
     flex-wrap: unset;
   }
 
-  #header .header__nav .content .container-content form input {
+  #header .header__nav .content .content__container form input {
     display: none;
     width: 30%;
   }

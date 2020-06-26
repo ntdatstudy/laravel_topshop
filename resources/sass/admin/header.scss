@@ -1,0 +1,41 @@
+@import '../screen_variable';
+
+#header {
+    .header__topnav {
+        position: fixed;
+        height: 45px;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background: #fff;
+        border-bottom: 1px solid #cdcdcd;
+
+        #btn-open-menu, #btn-close-menu {
+            background: none;
+            border: none;
+            outline: none;
+            img {
+                width: 20px;
+            }
+
+            @media screen and (min-width: $md-screen) {
+                display: none;
+            }
+            
+        }
+
+        #btn-close-menu {
+            display: none;
+        }
+
+        .logout {
+            img {
+                width: 30px;
+            }
+        }
+    }
+}

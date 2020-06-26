@@ -12,20 +12,26 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/common.js') }}" defer></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js" defer></script>
+
     @stack('js')
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css"/>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/admin/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin/sidebar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin/main.css') }}">
     @stack('css')
 </head>
 <body>
     <div id="app">
-        @include('components.header')
-
+        @include('components.admin.header')
+        @include('components.admin.sidebar')
         <main id="main">
             @yield('content')
         </main>

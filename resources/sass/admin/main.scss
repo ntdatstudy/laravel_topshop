@@ -1,0 +1,9 @@
+@import '../screen_variable';
+
+#main {
+    padding-top: 45px;
+
+    @media screen and (min-width: $md-screen) {
+        padding-left: 65px;
+    }
+}

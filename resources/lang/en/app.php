@@ -14,4 +14,10 @@ return [
     'dresses' => 'Dresses',
     'shoes' => 'Shoes',
     'skirts' => 'Skirts',
+    'view_profile' => 'View Profile',
+    'dashboard' => 'Dashboard',
+    'users' => 'Users',
+    'categories' => 'Categories',
+    'products' => 'Products',
+    'orders' => 'Orders',
 ];

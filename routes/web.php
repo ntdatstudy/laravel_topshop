@@ -18,7 +18,8 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['auth']], function() {
     Route::group(['prefix' => 'admin', 'middleware' => ['admin']], function() {
-        Route::get('/', 'AdminController@index')->name('admin.index');
+        Route::get('/', 'AdminController@dashboard')->name('admin.dashboard');
+        Route::get('/users', 'AdminController@users')->name('admin.users');
     });
 });
 

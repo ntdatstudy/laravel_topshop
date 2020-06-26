@@ -32,36 +32,36 @@ const app = new Vue({
     el: '#app'
 });
 
-$(window).on('scroll', function() {
-    let headerNavbar = $('#header .header__nav .nav');
-    let win = $(window);
-    let winTop = win.scrollTop();
-    let winWidth = win.width();
+// $(window).on('scroll', function() {
+//     let headerNavbar = $('#header .header__nav .nav');
+//     let win = $(window);
+//     let winTop = win.scrollTop();
+//     let winWidth = win.width();
 
-    if (winWidth < 768) return;
+//     if (winWidth < 768) return;
 
-    if (winTop > 135) {
-        headerNavbar.addClass('fixed-top');
-    } else {
-        headerNavbar.removeClass('fixed-top');
-    }
-}).on('resize', function() {
-    if ($(this).width() > 768) {
-        $('.header__nav .nav').removeClass('active');
-        $('body').removeClass('overflow-hidden');
-    }
-});
+//     if (winTop > 135) {
+//         headerNavbar.addClass('fixed-top');
+//     } else {
+//         headerNavbar.removeClass('fixed-top');
+//     }
+// }).on('resize', function() {
+//     if ($(this).width() > 768) {
+//         $('.header__nav .nav').removeClass('active');
+//         $('body').removeClass('overflow-hidden');
+//     }
+// });
 
-$('.nav-list li a').on('click', function() {
-    $(this).toggleClass('active').next().toggleClass('active');
-});
+// $('.nav-list li a').on('click', function() {
+//     $(this).toggleClass('active').next().toggleClass('active');
+// });
 
-$('#btn-open-menu').on('click', function() {
-    $('.header__nav .nav').addClass('active');
-    $('body').addClass('overflow-hidden');
-});
+// $('#btn-open-menu').on('click', function() {
+//     $('.header__nav .nav').addClass('active');
+//     $('body').addClass('overflow-hidden');
+// });
 
-$('#btn-close-menu').on('click', function() {
-    $('.header__nav .nav').removeClass('active');
-    $('body').removeClass('overflow-hidden');
-});
+// $('#btn-close-menu').on('click', function() {
+//     $('.header__nav .nav').removeClass('active');
+//     $('body').removeClass('overflow-hidden');
+// });

@@ -11,7 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.sass('resources/sass/app.scss', 'public/css')
+   .sass('resources/sass/index.scss', 'public/css/index.css')
+   .sass('resources/sass/admin/header.scss', 'public/css/admin/header.css')
+   .sass('resources/sass/admin/sidebar.scss', 'public/css/admin/sidebar.css')
+   .sass('resources/sass/admin/main.scss', 'public/css/admin/main.css');
+
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css')
-   .copyDirectory('resources/img', 'public/img')
-   .sass('resources/sass/index.scss', 'public/css/index.css');
+   .js('resources/js/common.js', 'public/js/common.js')
+   .js('resources/js/handle_datatables.js', 'public/js/handle_datatables.js');
+
+mix.copyDirectory('resources/img', 'public/img');

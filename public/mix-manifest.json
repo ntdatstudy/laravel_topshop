@@ -1,5 +1,10 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/css/index.css": "/css/index.css"
+    "/css/index.css": "/css/index.css",
+    "/css/admin/header.css": "/css/admin/header.css",
+    "/css/admin/sidebar.css": "/css/admin/sidebar.css",
+    "/css/admin/main.css": "/css/admin/main.css",
+    "/js/common.js": "/js/common.js",
+    "/js/handle_datatables.js": "/js/handle_datatables.js"
 }
